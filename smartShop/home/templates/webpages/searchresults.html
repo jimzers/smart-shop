@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+    <head>
+
+        <title>
+                Search Results
+        </title>
+        
+        <style>
+            body{
+                background-color:rgb(180, 176, 243);
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="logo.png" width="150">
+        <form action="about.html" STYLE="position:absolute; TOP:10px; LEFT: 200px; WIDTH:50px;">
+            <input type="submit" value="About" />
+        </form>
+        <form action="login.html" STYLE="position:absolute; TOP:10px; RIGHT:150px; WIDTH:50px;">
+            <input type="submit" value="Login" />
+        </form>  
+        <form action="home.html" STYLE="position:absolute; TOP:10px; RIGHT: 250px; WIDTH:50px;">
+            <input type="submit" value="Home" />
+        </form>
+        <form action="userprofile.html" STYLE="position:absolute; TOP:10px; RIGHT:50px; WIDTH:50px;">
+            <input type="submit" value="UserProfile" />
+        </form>
+
+<br> <br>
+        <h1>Search Results</h1>
+        {% for clothing in searchlist %}
+        <li><a href="/clothing/{{ clothing.id }}/">{{ clothing.clothing_name }}</a></li>
+        {% endfor %}

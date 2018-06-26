@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% if all_clothings %}
+    <h3>Here are all my clothes:</h3>
+    <ul>
+        {% for clothing in all_clothings %}
+        <li><a href="/clothing/{{ clothing.id }}/">{{ clothing.clothing_name }}</a></li>
+        {% endfor %}
+
+    </ul>
+{% else %}
+    <h3>You don't have any clothes</h3>
+{% endif %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>

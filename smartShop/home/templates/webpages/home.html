@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+    <head>
+
+        <title>
+                Home
+        </title>
+
+        <style>
+            body{
+                background-color:rgb(180, 176, 243);
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="logo.PNG" width="150">
+        <form action="about.html" STYLE="position:absolute; TOP:10px; LEFT: 200px; WIDTH:50px;">
+            <input type="submit" value="About" />
+        </form>
+        <form action="login.html" STYLE="position:absolute; TOP:10px; RIGHT:150px; WIDTH:50px;">
+            <input type="submit" value="Login" />
+        </form>  
+        <form action="userprofile.html" STYLE="position:absolute; TOP:10px; RIGHT:50px; WIDTH:50px;">
+            <input type="submit" value="UserProfile" />
+        </form>
+        
+        <!-- DJANGO FUNCTION -->
+        <form action="searchresults.html" STYLE="position:absolute; TOP:300px; LEFT:50px; WIDTH:50px;">
+            <input type="submit" value="Search" />
+        </form>   
+
+
+
+<br> <br>
+        <h1>Home</h1>
+        <form name="ClothingSearch">
+            <label>Budget: $</label>
+            <input type="int" budget="budget" />
+            <label>Clothing Type:</label>
+            <select name="type">
+                <option value="Top" selected>Top</option>
+                <option value="Bottom">Bottom</option>
+                <option value="Shoes">Shoes</option>
+            </select>           
+            <label>Clothing Preference:</label>
+            <select name="preference">
+                <option value="UserPreference" selected>My Preference</option>
+                <option value="Hypebeast">Hypebeast</option>
+                <option value="Designer">Designer</option>
+                <option value="Basic">Basic</option>
+                <option value="Formal">Formal</option>
+                <option value="Athletic">Athletic</option>
+            </select>
+            <label>Manufacturer Friendliness (Outsourcing/Exploitation):</label>
+            <select name="friendly">
+                <option value="Friendly" selected>Friendly</option>
+                <option value="NoPreference">No Preference</option>
+

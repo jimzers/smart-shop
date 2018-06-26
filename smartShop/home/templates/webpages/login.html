@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+    <title>SmartShop</title>
+    <style> 
+        body{
+                background-color:rgb(180, 176, 243);
+            }
+    </style>
+    <script type = "text/javascript" src="script.js"></script>
+</head>
+
+<body>
+        <img src="logo.png" width="150">
+        <form action="home.html" STYLE="position:absolute; TOP:10px; RIGHT: 250px; WIDTH:50px;">
+            <input type="submit" value="Home" />
+        </form>
+        <form action="login.html" STYLE="position:absolute; TOP:10px; RIGHT:150px; WIDTH:50px;">
+            <input type="submit" value="Login" />
+        </form>  
+        <form action="userprofile.html" STYLE="position:absolute; TOP:10px; RIGHT:50px; WIDTH:50px;">
+            <input type="submit" value="UserProfile" /> 
+        </form>
+        <form action="about.html" STYLE="position:absolute; TOP:10px; LEFT:200px; WIDTH:50px;">
+                <input type="submit" value="AboutUs" />
+                
+            </form>
+        </form> 
+
+        <h3>Login:</h3>
+        <form name="loginInfo">
+            <label>Username:</label>
+            <input type="text" name="username" />
+            <label>Password:</label>
+            <input type="text" name="password" />
+
+
+                <input type="button" value="Submit" onClick="processLogin()"/>
+        </form>
+        
+        <div id="userInfo"></div>
+
+        <h3> If you don't have an account, make one now:</h3>
+
+        <form name="loginInfoNew">
+            <label>New Username:</label>
+            <input type="text" name="newusername" />
+            <label>New Password:</label>
+            <input type="text" name="newpassword" />
+            <select name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+            <h3>Preferences:</h3>
+            <input type="checkbox" name="preference" value="hypebeast"> Hypebeast
+            <input type="checkbox" name="preference" value="designer"> Designer 
+            <input type="checkbox" name="preference" value="basic"> Basic 
+            <input type="checkbox" name="preference" value="formal"> Formal
+            <input type="checkbox" name="preference" value="athletic"> Athletic 
+
+<br><br>
+
+                <input type="button" value="Create" onClick="processCreate()"/>
+        </form>
+        
+        <div id="userInfoNew"></div>
+
+    </body>
+
+</html>
+
+    
+</body>
+
+</html>
